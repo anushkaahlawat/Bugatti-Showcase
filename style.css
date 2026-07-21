@@ -60,7 +60,16 @@ body{
     color: silver;
     }
 
-    .sub td{
+    .sub13 a{
+        text-decoration: none;
+        color: silver;
+    }
+
+    .sub13 a:hover{
+        color: orange;
+    }
+
+    .sub13 td{
     padding-bottom:40px ;
     transition: all 0.10s ease ;
     }
@@ -139,7 +148,7 @@ body{
         height: 100vh;
         position: absolute;
         left: 50vw;
-        transform: all 2s ease-in-out;
+        transition: all 2s ease-in-out;
     }
 
     .main2:hover .sub22{
@@ -202,5 +211,78 @@ body{
         }
 
         .box:hover{
-            transform: scale (1.08);
+            transform: scale(1.08);
+        }
+
+        .scroll-down{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bold;
+            color: ghostwhite;
+            font-size: 18px;
+            animation: bounce 1.5s infinite;
+            z-index: 10;
+        }
+
+        @keyframes bounce{
+            0%,100%{
+                transform: translateX(-50%) translateY(0);
+            }
+
+            50%{
+                transform: translateX(-50%) translateY(10px);
+            }
+        }
+
+        .main4{
+            background: #111;
+            color: white;
+            padding: 70px;
+            text-align: center;    
+        }
+
+        .main4 h1{
+            margin-bottom: 40px;
+            color: orange;
+        }
+
+        .main4 table{
+            margin: auto;
+            width: 60%;
+            border-collapse: collapse;
+        }
+
+        .main4 th,
+        .main4 td{
+            border: 1px solid orange;
+            padding: 20px;
+        }
+
+        .facts{
+
+            background:#111;
+
+            color:white;
+
+            padding:60px;
+
+            text-align:center;
+
+        }
+
+        .facts p{
+
+            padding:10px;
+
+            font-size:22px;
+
+        }
+
+        .footer{
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 40px;
         }
